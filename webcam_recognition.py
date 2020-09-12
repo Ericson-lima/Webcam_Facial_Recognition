@@ -1,11 +1,8 @@
 import os
-import glob
-import _pickle as cPickle
 import dlib
 import cv2
 import numpy as np
 import serial
-import time
 
 ser = serial.Serial('COM5', 9600, timeout=0)
 detectorFace = dlib.get_frontal_face_detector()
